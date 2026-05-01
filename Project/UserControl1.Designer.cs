@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class UserControl2
+    partial class UserControl1
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // UserControl2
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(863, 530);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

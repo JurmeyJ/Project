@@ -29,7 +29,7 @@ namespace Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ShowScreen(new Home());
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
