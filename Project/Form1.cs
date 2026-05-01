@@ -19,7 +19,7 @@ namespace Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            ShowScreen(new Inventory());
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -35,6 +35,17 @@ namespace Project
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void ShowScreen(UserControl newScreen)
+        {
+            foreach(Control ctrl in pnlContent.Controls)
+            {
+                ctrl.Dispose();
+            }
+            pnlContent.Controls.Clear();
+            newScreen.Dock = DockStyle.Fill;
+            pnlContent.Controls.Add(newScreen);
         }
     }
 }

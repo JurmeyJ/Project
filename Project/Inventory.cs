@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class UserControl1 : UserControl
+    public partial class Inventory : UserControl
     {
-        public UserControl1()
+        public Inventory()
         {
             InitializeComponent();
         }

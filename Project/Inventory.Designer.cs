@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class UserControl1
+    partial class Inventory
     {
         /// <summary> 
         /// Required designer variable.
