@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.Left = new System.Windows.Forms.Panel();
+            this.btnOrders = new System.Windows.Forms.Button();
             this.btnEditProduct = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.btnOrders = new System.Windows.Forms.Button();
+            this.btnCheckout = new System.Windows.Forms.Button();
             this.Left.SuspendLayout();
             this.SuspendLayout();
             // 
             // Left
             // 
+            this.Left.Controls.Add(this.btnCheckout);
             this.Left.Controls.Add(this.btnOrders);
             this.Left.Controls.Add(this.btnEditProduct);
             this.Left.Controls.Add(this.btnInventory);
@@ -48,9 +50,19 @@
             this.Left.Size = new System.Drawing.Size(155, 546);
             this.Left.TabIndex = 0;
             // 
+            // btnOrders
+            // 
+            this.btnOrders.Location = new System.Drawing.Point(37, 242);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.Size = new System.Drawing.Size(74, 19);
+            this.btnOrders.TabIndex = 3;
+            this.btnOrders.Text = "Orders";
+            this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            // 
             // btnEditProduct
             // 
-            this.btnEditProduct.Location = new System.Drawing.Point(37, 191);
+            this.btnEditProduct.Location = new System.Drawing.Point(37, 190);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(75, 23);
             this.btnEditProduct.TabIndex = 2;
@@ -84,15 +96,17 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(814, 546);
             this.pnlContent.TabIndex = 1;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
             // 
-            // btnOrders
+            // btnCheckout
             // 
-            this.btnOrders.Location = new System.Drawing.Point(37, 244);
-            this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(74, 19);
-            this.btnOrders.TabIndex = 3;
-            this.btnOrders.Text = "Orders";
-            this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnCheckout.Location = new System.Drawing.Point(37, 293);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckout.TabIndex = 4;
+            this.btnCheckout.Text = "Checkout";
+            this.btnCheckout.UseVisualStyleBackColor = true;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // Form1
             // 
@@ -116,6 +130,7 @@
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Button btnOrders;
+        private System.Windows.Forms.Button btnCheckout;
     }
 }
 

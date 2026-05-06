@@ -24,7 +24,7 @@ namespace Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            ShowScreen(new EditProduct());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,6 +46,21 @@ namespace Project
             pnlContent.Controls.Clear();
             newScreen.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(newScreen);
+        }
+
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new Orders());
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new Checkout());
         }
     }
 }

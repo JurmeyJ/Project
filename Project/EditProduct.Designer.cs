@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class EditProdcut
+    partial class EditProduct
     {
         /// <summary> 
         /// Required designer variable.

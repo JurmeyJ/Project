@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class EditProdcut : UserControl
+    public partial class EditProduct : UserControl
     {
-        public EditProdcut()
+        public EditProduct()
         {
             InitializeComponent();
         }
