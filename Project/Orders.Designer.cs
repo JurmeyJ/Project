@@ -90,7 +90,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
+            this.button4.Text = "Load Order";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // label1
