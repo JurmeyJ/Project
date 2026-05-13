@@ -29,26 +29,38 @@
         private void InitializeComponent()
         {
             this.Left = new System.Windows.Forms.Panel();
+            this.btnCheckout = new System.Windows.Forms.Button();
             this.btnOrders = new System.Windows.Forms.Button();
             this.btnEditProduct = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.btnCheckout = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Left.SuspendLayout();
             this.SuspendLayout();
             // 
             // Left
             // 
+            this.Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Left.Controls.Add(this.btnCheckout);
             this.Left.Controls.Add(this.btnOrders);
             this.Left.Controls.Add(this.btnEditProduct);
             this.Left.Controls.Add(this.btnInventory);
             this.Left.Controls.Add(this.btnHome);
-            this.Left.Location = new System.Drawing.Point(-1, -1);
+            this.Left.Location = new System.Drawing.Point(1, 5);
             this.Left.Name = "Left";
-            this.Left.Size = new System.Drawing.Size(155, 546);
+            this.Left.Size = new System.Drawing.Size(143, 508);
             this.Left.TabIndex = 0;
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.Location = new System.Drawing.Point(37, 293);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckout.TabIndex = 4;
+            this.btnCheckout.Text = "Checkout";
+            this.btnCheckout.UseVisualStyleBackColor = true;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // btnOrders
             // 
@@ -92,27 +104,18 @@
             // 
             // pnlContent
             // 
-            this.pnlContent.Location = new System.Drawing.Point(150, -1);
+            this.pnlContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlContent.Location = new System.Drawing.Point(150, 5);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(814, 546);
+            this.pnlContent.Size = new System.Drawing.Size(800, 508);
             this.pnlContent.TabIndex = 1;
             this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
-            // 
-            // btnCheckout
-            // 
-            this.btnCheckout.Location = new System.Drawing.Point(37, 293);
-            this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(75, 23);
-            this.btnCheckout.TabIndex = 4;
-            this.btnCheckout.Text = "Checkout";
-            this.btnCheckout.UseVisualStyleBackColor = true;
-            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 543);
+            this.ClientSize = new System.Drawing.Size(962, 516);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.Left);
             this.Name = "Form1";
@@ -131,6 +134,7 @@
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Button btnCheckout;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
