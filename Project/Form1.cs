@@ -22,11 +22,7 @@ namespace Project
             ShowScreen(new Inventory());
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ShowScreen(new EditProduct());
-        }
-
+     
         private void button1_Click(object sender, EventArgs e)
         {
             ShowScreen(new Home());
